@@ -40,7 +40,7 @@ function renderAbout(res) {
         "Content-Type": "text/html"
     });
 
-    const developer = "Josh Archer";
+    const developer = "Jaron Bautista";
     const date = new Date();
 
     //rudimentary templating
