@@ -1,9 +1,11 @@
 import express from 'express';
+import * as ctl from "../controller/book-controller.js";
 
-router = express.Router();
+export const router = express.Router();
 
-router.get("/chapters", );
-router.get("/title", );
-router.get("pages", );
-router.get("/author", );
-router.all("/", );
+router.get("/chapters", ctl.getChapters);
+router.get("/title", ctl.getTitle);
+router.get("/pages", ctl.getPages);
+router.get("/author", ctl.getAuthor);
+router.get("/all", ctl.allBook);
+router.get("/details", ctl.getField);
