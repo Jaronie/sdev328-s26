@@ -170,3 +170,11 @@ export const addMonument = mon => {
     
     data.push(mon);
 }
+
+export const updateMonument = updatedMon => {
+    //how to find which monument this is?
+
+    //did I find the monument?
+
+    //update the monument found...
+}
