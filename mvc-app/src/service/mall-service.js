@@ -18,4 +18,8 @@ export const getMalls = () => {
 
 export const getLocations = () => {
     return data.map(mall => mall.location);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 021301ff2e92eb7f9a9ebc4f813cc6a6655721bc

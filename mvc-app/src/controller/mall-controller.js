@@ -19,6 +19,10 @@ export const mallById = (req, res) => {
         })
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 021301ff2e92eb7f9a9ebc4f813cc6a6655721bc
 export const mallLocations = (req, res) => {
     const locs = getLocations();
     res.status(200);
