@@ -9,11 +9,26 @@ const book = {
 
 }
 
-export const getField = (req, res) => {
-    const field = req.query.field; 
-    console.log(`Field: ${field}`);
+export const printAll = (req, res) => {
+    const title = req.query.title;
+    const year = req.query.year;
+    const genre = req.query.genre;
+    console.log(title, year, genre);
 
-    res.status(200).json({ message: "TBA" });
+
+    res.status(200).json(req.query);
+}
+
+
+export const getField = (req, res) => {
+    const field = req.query.fields;
+    const fields = field.split(", ");
+
+    let result = {};
+    fields.forEach(field => {
+        result[field] = book[field];
+    });
+    res.status(200).json(result);
 }
 
 export const getChapters = (req,res) => {
